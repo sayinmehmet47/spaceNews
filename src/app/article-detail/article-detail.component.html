@@ -4,4 +4,7 @@
 <div class="article-detail">
     <h1 class="article-title">{{article?.title}}</h1>
     <img [src]="article?.image_url" alt="Article Image" class="article-image">
+    <p class="article-content">{{article?.summary}}</p>
+    <p class="article-content">{{article?.events}}</p>
+    <p class="article-content">{{article?.updated_at | date:'medium'}}</p>
 </div>
