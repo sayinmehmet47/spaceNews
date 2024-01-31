@@ -1,2 +1,7 @@
-<p>{{article?.title}}</p>
-<img src={{article?.image_url}} alt="" width="400" height="300">
+<button class="button">
+    <a routerLink="/articles">Back</a>
+</button>
+<div class="article-detail">
+    <h1 class="article-title">{{article?.title}}</h1>
+    <img [src]="article?.image_url" alt="Article Image" class="article-image">
+</div>
