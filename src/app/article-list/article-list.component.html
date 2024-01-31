@@ -5,7 +5,7 @@
     <div *ngFor="let article of (articles$ | async)?.results" class="article">
         <a [routerLink]="['/articles', article.id]">
             <h2>{{article.title}}</h2>
-            <img [src]="article.image_url" alt="" height="320" width="420">
+            <img [src]="article.image_url" alt="" class="article-image">
         </a>
     </div>
 </div>

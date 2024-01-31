@@ -11,8 +11,8 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./article-list.component.css'],
 })
 export class ArticleListComponent implements OnInit, OnDestroy {
-  private static readonly INITIAL_ARTICLES_COUNT = 5;
-  private static readonly ADDITIONAL_ARTICLES_COUNT = 2;
+  private static readonly INITIAL_ARTICLES_COUNT = 14;
+  private static readonly ADDITIONAL_ARTICLES_COUNT = 7;
 
   limit = ArticleListComponent.INITIAL_ARTICLES_COUNT;
   offset = this.limit - ArticleListComponent.ADDITIONAL_ARTICLES_COUNT;
