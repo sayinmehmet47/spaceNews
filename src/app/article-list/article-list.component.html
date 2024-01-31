@@ -1,0 +1,14 @@
+<form #f="ngForm">
+    <input type="text" ngModel (input)="onSearch(f.value.search)" placeholder="Search" name="search">
+</form>
+<div style=" background-color: aqua; margin-left: auto; margin-right: auto; width: fit-content;">
+    <div *ngFor="let article of articles?.results"
+        style="background-color: turquoise; max-width: 800px;padding: 10px; border: 1px solid gray; display: flex; justify-items: center; flex-direction: column; align-items: center;">
+        <a routerLink="/articles/{{article.id}}">
+            <h2>{{article.title}}</h2>
+            <img src={{article.image_url}} alt="" height="320" width="420">
+        </a>
+    </div>
+</div>
+
+<button (click)="onLoadMore()" style="display: block; width: 100%; padding: 24px; margin-top: 12px;">Load More</button>
